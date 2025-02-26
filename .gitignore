@@ -1,1 +1,4 @@
 /Datasets/995000_rows.csv
+block_stopwords_news_sample.csv
+stemmed_news_sample.csv
+
