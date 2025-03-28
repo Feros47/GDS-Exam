@@ -17,7 +17,7 @@ This project processes a fake news corpus to build machine learning models that 
 ├── models
 │   └── (trained model and pipeline files will be saved here)
 ├── README.md
-└── fake_news_pipeline.py  # or separate scripts for each step
+└── fake_news.ipynb  # or separate scripts for each step
 ```
 
 ## Requirements
@@ -56,15 +56,8 @@ ray
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your_username/fake-news-detection.git
-cd fake-news-detection
-```
-
-### Virtual Environment (recommended)
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+git clone https://github.com/Feros47/GDS-Exam.git
+cd GDS_Exam
 ```
 
 ### Install Dependencies
@@ -95,20 +88,12 @@ This step includes:
 - Exploratory plots and vocabulary statistics
 - Scalable processing with Modin and Ray
 
-Execute:
-```bash
-python fake_news_pipeline.py --task preprocess_explore
-```
 
 ### 2. Simple Model (Logistic Regression)
 
 - Bag-of-words features (CountVectorizer)
 - Logistic regression training and evaluation
 
-Execute:
-```bash
-python fake_news_pipeline.py --task simple_model
-```
 
 ### 3. Advanced Models (Grid Search and TF-IDF)
 
@@ -117,10 +102,6 @@ python fake_news_pipeline.py --task simple_model
 - Hyperparameter tuning via grid search
 - Model evaluation and confusion matrices
 
-Execute:
-```bash
-python fake_news_pipeline.py --task advanced_model
-```
 
 ### 4. LIAR Dataset Evaluation
 
@@ -128,10 +109,6 @@ python fake_news_pipeline.py --task advanced_model
 - Evaluation of simple and advanced models on LIAR dataset
 - Plotting confusion matrices
 
-Execute:
-```bash
-python fake_news_pipeline.py --task liar_evaluation
-```
 
 ## Output and Model Artifacts
 
